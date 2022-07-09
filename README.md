@@ -16,4 +16,6 @@ pip install pynput
 sudo apt -y install python3-pynput
 ```
 
-Note : If pip related error occurs then reinstall pip and try again installing pynput
+### Note : If pip related error occurs then reinstall pip and try again installing pynput
+
+### Note : If you are running this in a Windows based system then make sure you turn off Windows Defender or any other antivirus software installed. I recommend you using a Windows based VM.
